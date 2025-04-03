@@ -9,21 +9,28 @@
   </head>
   <body>
     <div class="w-full h-full bg-zinc-900 p-12 text-white">
-      <form action="">
+      <div class="nav mb-12">
+        <a class="text-blue-400" href="/read">Read User</a>
+      </div>
+      <h1 class="text-4xl tracking-tight mb-5">Create User</h1>
+      <form action="/create" method="post">
         <input
           type="text"
           placeholder="Username"
           class="px-6 border border-zinc-600 rounded-sm outline-none py-2 mb-4 bg-transparent"
+          name="name"
         />
         <input
           type="text"
-          placeholder="email"
+          placeholder="Email"
           class="px-6 border border-zinc-600 rounded-sm outline-none py-2 mb-4 bg-transparent"
+          name="email"
         />
         <input
           type="text"
           placeholder="Image url"
           class="px-6 border border-zinc-600 rounded-sm outline-none py-2 mb-4 bg-transparent"
+          name="image"
         />
         <input
           type="submit"
