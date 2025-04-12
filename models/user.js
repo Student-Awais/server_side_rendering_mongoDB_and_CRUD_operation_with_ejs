@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/express", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://localhost:27017/express");
+
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
